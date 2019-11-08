@@ -9,7 +9,7 @@
 
 //incomplete...
 
-template <class T,std::size_t Row_,std::size_t Column_>
+template <class T,std::size_t Column_,std::size_t Row_>
 class Matrix {
 public:
 	Matrix() {}
