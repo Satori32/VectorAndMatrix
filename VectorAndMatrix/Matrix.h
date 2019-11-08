@@ -12,6 +12,7 @@
 template <class T,std::size_t Row_,std::size_t Column_>
 class Matrix {
 public:
+	Matrix() {}
 	Matrix(const std::initializer_list<Vector<T,Column_>>& IL){
 		auto itA = IL.begin();
 		auto itB = m.begin();
@@ -38,8 +39,11 @@ public:
 		return Column_;
 	}
 
-public:
-	Vector<T, Row_> operator [](std::size_t In) {
+public:	
+	const Vector<T, Row_>& operator [](std::size_t In)const {
+		return m[In];
+	}
+	Vector<T, Row_>& operator [](std::size_t In) {
 		return m[In];
 	}
 	template<class U>

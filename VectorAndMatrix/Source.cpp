@@ -25,5 +25,14 @@ int main() {
 	}
 	{
 		Matrix<double, 2, 2> A = { {1,2},{3,4} };
+		Matrix<double, 2, 2> B = { {1,2},{3,4} };
+		double C = 16;
+		auto a = A + B;
+		auto b = A + C;	
+		auto d = A - B;
+		auto e = A - C;
+
 	}
+
+	return 0;
 }
