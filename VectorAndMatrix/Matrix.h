@@ -7,7 +7,7 @@
 //[|:Column]
 //[-:Row]
 
-//imcomplete...
+//incomplete...
 
 template <class T,std::size_t Row_,std::size_t Column_>
 class Matrix {
